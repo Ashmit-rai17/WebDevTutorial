@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-size: cover;
+        }
+        button{
+            font-size: 30px;
+            border-radius: 10px;
+            padding: 10px auto;
+            gap: 10px;
+        }
+        .card{
+            border: 5px solid black;
+            margin: 30px;
+            padding: 20px;
+            width: 200px;
+            background-color: aquamarine;
+        }
+        #Value{
+            color: blueviolet;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body class="bg">
+    <center>
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">No. of jobless people in mvit</h1>
+    <div class="card">
+    <button onclick="inc()">INCREMENT</button>
+    <br>
+    <button onclick="dec()">DECREMENT</button>
+    <p id="Value">0</p>
+</div>
+    <script>
+        let count = 0;
+        function render(){
+            document.getElementById("Value").innerHTML =count ;
+        }
+        function inc(){
+            count++;
+            render();
+        }
+        function dec(){
+            count--;
+            render();
+        }
+        let a = 5;
+        let b = "anthony";
+        let c = 45.54;
+        let d = true;
+        document.getElementById("typeof").innerHTML = typeof(a) + "<br>" + typeof(b) + "<br>" + typeof(c) + "<br>" + typeof(d); 
+    </script>
+    
+    </center>
+    
+</body>
+</html>
